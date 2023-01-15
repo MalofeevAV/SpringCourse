@@ -32,7 +32,8 @@
     </bean>
 
     <bean id="musicPlayer"
-        class="ru.malofeev.springcourse.MusicPlayer">
+        class="ru.malofeev.springcourse.MusicPlayer"
+        scope="prototype">
         <property name="musicList" ref="musicList"/>
 
         <property name="name" value="${musicPlayer.name}"/>

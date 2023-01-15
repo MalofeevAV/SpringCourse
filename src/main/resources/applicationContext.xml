@@ -14,7 +14,10 @@
     </bean>
 
     <bean id="musicClassicalBean"
-          class="ru.malofeev.springcourse.ClassicalMusic">
+          class="ru.malofeev.springcourse.ClassicalMusic"
+          init-method="doInit"
+          destroy-method="doDestroy"
+          factory-method="getClassicalMusic">
     </bean>
 
     <bean id="musicJazzBean"

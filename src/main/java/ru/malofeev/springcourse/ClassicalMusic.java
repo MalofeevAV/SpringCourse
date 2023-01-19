@@ -1,22 +1,13 @@
 package ru.malofeev.springcourse;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class ClassicalMusic implements Music{
-    private ClassicalMusic() {}
-
-    public static ClassicalMusic getClassicalMusic() {
-        return new ClassicalMusic();
-    }
-
-    private void doInit() {
-        System.out.println("Initialisation ClassicalMusic");
-    }
-
-    private void doDestroy(){
-        System.out.println("Destruction ClassicalMusic");
-    }
+    private String[] tracks = {"Oh! Viragok! Oh! Illatos kert!", "By the Still Waters", "En Bateau"};
 
     @Override
-    public String getSong() {
-        return "Hungarian Rhapsody";
+    public String[] getSongs() {
+        return tracks;
     }
 }

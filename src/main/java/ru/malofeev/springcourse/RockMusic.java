@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-@Component
+
 public class RockMusic implements Music{
     private String[] tracks = {"Whole Lotta Love", "Under Pressure", "Comfortably Numb"};
 
